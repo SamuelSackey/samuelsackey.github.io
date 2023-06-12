@@ -1,0 +1,51 @@
+:root {
+  --primary: #b85ee6;
+  --secondary: #999999;
+  --background: #111827;
+  --text: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--background);
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 7.5px 20px;
+  background-color: var(--primary);
+  color: var(--background);
+  border-radius: 50px;
+  border: 2px solid transparent;
+}
+
+.button:hover {
+  color: var(--primary);
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+}
+
+section {
+  padding-top: 60px;
+}
