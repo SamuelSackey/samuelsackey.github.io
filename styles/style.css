@@ -43,6 +43,7 @@ h3 {
   color: var(--primary);
 }
 
+/* Header Styles */
 header {
   display: flex;
   height: 60px;
@@ -75,6 +76,7 @@ header .button img {
   object-fit: cover;
 }
 
+/* Base Styles for button, round button, and section */
 .button {
   text-decoration: none;
   font-size: 18px;
@@ -123,6 +125,7 @@ section {
   padding: 60px 30px 30px;
 }
 
+/* Intro Section Styles */
 #intro {
   display: flex;
   align-items: center;
@@ -137,8 +140,10 @@ section {
   margin-bottom: 30px;
 }
 
-.text .button {
-  margin-left: 20px;
+.btn-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 #intro img,
@@ -152,6 +157,7 @@ section {
   padding: 10px;
 }
 
+/* Skills Section Styles */
 #skills {
   display: flex;
   flex-direction: column;
@@ -187,6 +193,7 @@ section {
   object-fit: cover;
 }
 
+/* Project Section Styles */
 #projects {
   display: flex;
   flex-direction: column;
@@ -243,6 +250,7 @@ section {
   text-align: right;
 }
 
+/* Contact Section Styles */
 #contact {
   display: flex;
   flex-direction: column;
@@ -257,6 +265,8 @@ section {
   gap: 30px;
   margin: 30px 0;
 }
+
+/* About Section styles */
 
 #about {
   display: flex;
@@ -280,4 +290,73 @@ section {
   padding: 20px;
   border-radius: 8px;
   max-width: 800px;
+}
+
+/* Media Query for small screens */
+@media (max-width: 640px) {
+  #intro {
+    flex-direction: column-reverse;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #sgrid {
+    grid-template-columns: repeat(2, var(--skill-box));
+    gap: 10px;
+  }
+
+  .p-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-image {
+    width: 100%;
+  }
+
+  .p-info {
+    text-align: center;
+  }
+
+  .p-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .c-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 800px) {
+  #sgrid {
+    grid-template-columns: repeat(3, var(--skill-box));
+    gap: 10px;
+  }
+
+  .p-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-image {
+    width: 100%;
+  }
+
+  .p-info {
+    text-align: center;
+  }
+
+  .p-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .c-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
