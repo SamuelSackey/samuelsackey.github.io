@@ -4,6 +4,7 @@
   --primary: #b85ee6;
   --secondary: #999999;
   --background: #111827;
+  --bg-light: #1f2937;
   --text: #ffffff;
 }
 
@@ -60,14 +61,10 @@ header {
   color: var(--background);
   border-radius: 4px;
   font-family: "Carme", sans-serif;
-  /* border: 2px solid transparent; */
 }
 
 .button:hover {
-  /* color: var(--primary);
-  background-color: var(--background);
-  border: 2px solid var(--primary); */
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 section {
@@ -99,6 +96,39 @@ section {
   padding: 10px;
 }
 
-.name {
+.color {
   color: var(--primary);
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+#sgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  gap: 20px;
+}
+
+#sgrid .box {
+  width: 150px;
+  height: 150px;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#sgrid .box img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
 }
