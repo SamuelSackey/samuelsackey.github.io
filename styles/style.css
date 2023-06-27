@@ -214,7 +214,7 @@ section {
 .p-item {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
   background-color: var(--bg-light);
   padding: 15px;
   border-radius: 8px;
