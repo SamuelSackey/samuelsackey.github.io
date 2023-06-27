@@ -21,6 +21,7 @@ html {
   background-color: var(--background);
   color: var(--text);
   font-family: "Martel", serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
